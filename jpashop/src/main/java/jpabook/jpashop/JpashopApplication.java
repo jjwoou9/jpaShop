@@ -9,9 +9,5 @@ public class JpashopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JpashopApplication.class, args);
 	}
-	
-	void gitTest() {
-		System.out.println("for test commit");
-	}
 
 }
