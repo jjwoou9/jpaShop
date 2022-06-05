@@ -21,17 +21,17 @@ public class MemberRepositoryTest {
 	@Rollback(false)
 	public void testMember() {
 		//given
-		Member member = new Member();
-		member.setUsername("memberA");
-		
-		//when
-		Long savedId = memberRepository.save(member);	
-		
-		//then
-		Member findMember = memberRepository.find(savedId);
-		
-		assertThat(findMember.getId()).isEqualTo(member.getId());
-		assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
-		assertThat(findMember).isEqualTo(member); //JPA 엔티티 동일성 보장 - Transactional 안에서 식별자가 같으면 같다고
+//		Member member = new Member();
+//		member.setUsername("memberA");
+//		
+//		//when
+//		Long savedId = memberRepository.save(member);	
+//		
+//		//then
+//		Member findMember = memberRepository.find(savedId);
+//		
+//		assertThat(findMember.getId()).isEqualTo(member.getId());
+//		assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+//		assertThat(findMember).isEqualTo(member); //JPA 엔티티 동일성 보장 - Transactional 안에서 식별자가 같으면 같다고
 	 }
 }
